@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+double circleArea(double r) {
+    return 3.141592 * r * r;
+}
+
+int main() {
+    double radius;
+
+    printf("반지름을 입력하세요: ");
+    scanf("%lf", &radius);
+
+    double area = circleArea(radius);
+
+    printf("반지름 %.2f의 원 넓이는 %.2f입니다.\n", radius, area);
+
+    return 0;
+}
